@@ -1,0 +1,15 @@
+robots.txt недоступний (URLError), використано fallback: дозволено
+Пропущено повторне посилання: http://localhost/catalog/page/2
+ 
+=== Звіт про збір даних ===
+Зібрано позицій: 4
+Виявлено посилань пагінації: 1
+  - http://localhost/catalog/page/2
+Унікальних адрес у visited_urls: 1
+Файл збережено: catalog_scraped.csv
+ 
+product_id                                     title        author  price_uah stock_status      relative_url
+       101                  Python для аналізу даних  Уес Маккінні      850.0  В наявності /catalog/item/101
+       102 Прикладне машинне навчання з Scikit-Learn Орельєн Жерон     1200.0  В наявності /catalog/item/102
+       103           Глибоке навчання без математики Франсуа Шолле      950.5   Очікується /catalog/item/103
+       104                       Чистий код у Python Маріано Анайя      720.0  В наявності /catalog/item/104
