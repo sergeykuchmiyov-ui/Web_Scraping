@@ -20,19 +20,7 @@ COLUMNS = ["product_id", "title", "author", "price_uah",
 def check_robots_permission(
     robots_url: str, target_url: str, agent: str = "*"
 ) -> bool:
-    """Перевіряє, чи дозволяє robots.txt сканувати target_url.
- 
-    Для локальних або офлайн-файлів (robots.txt недоступний) будь-який
-    виняток перехоплюється, і функція безпечно повертає True.
- 
-    Args:
-        robots_url: адреса файлу robots.txt.
-        target_url: адреса сторінки, яку планується сканувати.
-        agent: назва User-Agent (за замовчуванням '*').
- 
-    Returns:
-        True, якщо сканування дозволене або перевірку неможливо виконати.
-    """
+    
     try:
         parser = RobotFileParser()
         parser.set_url(robots_url)
